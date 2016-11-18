@@ -1,0 +1,70 @@
+/* VARIABLES */
+/* colors */
+$white-flat: #ecf0f1;
+$red-flat: #e74c3c;
+$dark-red-flat: #c0392b;
+
+$navbar-top-color: $red-flat;
+$navbar-top-color-secondary: $dark-red-flat;
+
+body {
+    background-color: #fff;
+}
+
+/* NAVBAR TOP */
+.title-bar {
+	background-color: $red-flat;
+}
+.top-bar,
+.top-bar ul {
+	background-color: $navbar-top-color;
+	padding: 0 .5rem;
+}
+.title-bar .menu-user {
+	a.button-login-mobile {
+		color: $white-flat;
+		padding: .4rem .6rem;
+		background-color: $navbar-top-color-secondary;
+	}
+}
+
+.navbar-top {
+	border-bottom: 2px solid $navbar-top-color-secondary;
+	a {
+		color: $white-flat;
+		@media screen and (max-width: 39.9675em) {
+			border-top: 1px solid $navbar-top-color-secondary;
+		}
+	}
+}
+.navbar-top .menu-user {
+	padding-top: .5rem;
+
+}
+.navbar-top .menu {
+	&>li>a:hover {
+		background-color: $navbar-top-color-secondary;
+	}
+}
+
+/* HEADER */
+header.header {
+	margin: 1rem auto;
+}
+
+form#search-principal .search-query {
+	label {
+		font-size: 2em;
+	}
+}
+
+/* HERO */
+.hero {
+	margin-bottom: 1rem;
+}
+
+/* FOOTER */
+.footer {
+	color: $white-flat;
+	background-color: #333;
+}
